@@ -1,0 +1,48 @@
+.tile-container {
+display: flex;
+align-items: center;
+justify-content: space-between;
+border: 1px solid gray;
+width: 360px;
+padding: 20px;
+margin: 8px auto;
+border-radius: 12px;
+}
+
+.flex-padding {
+  display: flex;
+  padding: 8px;
+  align-items: center;
+}
+
+.rounded-box{
+  width: 100px;
+  height: 100px;
+}
+
+.bold-red-btn{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  transition: 300ms;
+  cursor: pointer;
+  font-weight: bolder;
+  &:hover {
+    background-color: rgba(0,0,0,1);
+  }
+}
+
+.tile-content {
+  
+  .text-title {
+    font-size: 1.25rem;
+    color: rgb(73, 135, 211);
+  }
+
+  .text-price {
+    font-size: 1rem;
+    color: rgb(56, 203, 199);
+  }
+}

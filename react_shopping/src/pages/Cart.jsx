@@ -2,7 +2,7 @@ import { useSelector } from 'react-redux'
 import './Cart.css'
 
 import React, { useEffect, useState } from 'react'
-import CartTile from '../components/cart-tile/Cart';
+import CartTile from '../components/cart-tile/Cart-tile';
 import { Link } from 'react-router-dom';
 
 export default function Cart() {
