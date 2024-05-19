@@ -16,19 +16,34 @@
 //index.ts -> index.js 로 생성
 // 자바스크립트에 type 검사를 강화한 버전
 
-let myName = '홍길동'
-myName = '유관순'
+let myName = "홍길동";
+myName = "유관순";
 // myName = 33  -> 자료형이 달라서 에러 (타입스크립트)
 
 //string, number, boolean, null, undefined, [], {}, bigint
-let 이름 : string = '사과'
-let 숫자 : number = 123.3;
-let 숫자배열 : number[] = [1,2,3] // 숫자로만 이루어진 배열
-let 문자열배열 : string[] = ['a', 'b', 'c'] // 문자열로만 이루어진 배열
-let 객체 : {이름:string, 나이:number} = {이름:'김유신', 나이:33} // 객체의 타입
+let 이름: string = "사과";
+let 숫자: number = 123.3;
+let 숫자배열: number[] = [1, 2, 3]; // 숫자로만 이루어진 배열
+let 문자열배열: string[] = ["a", "b", "c"]; // 문자열로만 이루어진 배열
+let 객체: { 이름: string; 나이: number } = { 이름: "김유신", 나이: 33 }; // 객체의 타입
 
-let 오브젝트:{_name:string, _age:number, _adult:boolean} = {
-  _name:'이름',
-  _age:33,
-  _adult:true
+let 오브젝트: { _name: string; _age: number; _adult: boolean } = {
+  _name: "이름",
+  _age: 33,
+  _adult: true,
+};
+
+//title, btn
+let title = document.getElementById("title");
+let btn = document.getElementById("btn");
+//버튼 누르면 title태그의 html 내용을 '반갑습니다' 로 바꿔주자
+//1. 버튼 id를 찾아서 클릭 이벤트를 넣어준다
+if (btn !== null) {
+  btn.addEventListener("click", () => {
+    if (title !== null) {
+      title.innerHTML = "반갑습니다.";
+    }
+  });
+} else {
+  console.log("btn이 없습니다.");
 }
