@@ -1,0 +1,21 @@
+/* 
+  layout.js 에 연결된 스타일시트 
+  layout.js 가 모든 페이지에 영향을 미치기 때문에 global.css로 모든곳에 적용됨
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  color: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
